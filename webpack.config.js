@@ -1,5 +1,6 @@
-const env = process.env.NODE_ENV || 'development';
 // set to 'production' or 'development' in your env
+
+const env = process.env.NODE_ENV || 'development';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
@@ -14,6 +15,9 @@ module.exports = {
   mode: env,
   entry: ['./src'], // this is where our app lives
   devtool: 'source-map', // this enables debugging with source in chrome devtools
+  output: {
+    publicPath: '/',
+  },
   module: {
     rules: [
       {
@@ -55,7 +59,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(pdf|jpe?g|png|gif|svg)$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name].[contenthash][ext][query]',
@@ -76,5 +80,6 @@ module.exports = {
   ],
   devServer: {
     hot: true,
+    historyApiFallback: true,
   },
 };
