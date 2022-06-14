@@ -11,13 +11,9 @@ body, html {
 }
 
 .main-body{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
   min-height: 80vh;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1{
@@ -32,9 +28,10 @@ img{
 }
 
 #professional{
-  min-width: 100px;
+  min-width: 200px;
   width: 20%;
   height: auto;
+  padding: 10px;
 }
 
 #home{
@@ -52,5 +49,99 @@ img{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+
+#projects{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+}
+
+.project-card, .project-card-flipped{
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin: 30px;
+  .icon{
+    height: 50%;
+    width: auto;
+    aspect-ratio: 1;
+  }
+  h3{
+    max-width: 80%;
+    max-height: 80%;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  p{
+    max-height: 80%;
+    max-width: 80%;
+  }
+  h4{
+    max-width: 80%;
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+
+#about{
+  padding: 20px;
+  h2{
+    font-weight: 400;
+    font-size: 4rem;
+  }
+  img{
+    min-width: 200px;
+    width: 20%;
+    height: fit-content;
+    padding: 30px;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  div{
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card, .project-card-flipped{
+    width: 250px;
+    height: 250px;
+
+    h3{
+      font-size: 1.2rem;
+    }
+
+    p{
+      max-width: 80%;
+    }
+    h4{
+      max-width: 80%;
+      font-size: 1rem;
+      margin: 0;
+    }
+    overflow: scroll;
+  }
+
+  #home{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    h1{
+      font-size: 3rem;
+    }
+  }
+  #about div{
+    flex-direction: column-reverse;
+  }
+  #about h2{
+    font-size: 2rem;
   }
 }
