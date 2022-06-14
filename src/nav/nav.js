@@ -4,12 +4,15 @@ import './style.scss';
 
 function Nav(props) {
   const location = useLocation().pathname;
+  console.log(location);
   return (
     <nav>
       <ul>
-        <div>
-          <li className="logo"><NavLink to="/" exact="true">Elizabeth Frey</NavLink></li>
-        </div>
+        {location !== '/' ? (
+          <div>
+            <li className="logo"><NavLink to="/" exact="true">Elizabeth Frey</NavLink></li>
+          </div>
+        ) : <div />}
         <div className="menu">
           <li className={location === '/projects' ? 'active' : ''}><NavLink to="/projects" exact="true">Projects</NavLink></li>
           <li className={location === '/about' ? 'active' : ''}><NavLink to="/about" exact="true">About</NavLink></li>

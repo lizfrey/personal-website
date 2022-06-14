@@ -10,7 +10,6 @@ import Nav from './nav/nav';
 import './style.scss';
 import Fallback from './components/fallback';
 import Contact from './nav/contact';
-import Resume from './components/resume';
 
 // eslint-disable-next-line react/function-component-definition
 const App = (props) => {
@@ -23,7 +22,6 @@ const App = (props) => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<Fallback />} />
           </Routes>
           <Contact />

@@ -55,7 +55,6 @@ img{
 #projects{
   display: flex;
   flex-flow: row wrap;
-  max-width: 1000px;
 }
 
 .project-card, .project-card-flipped{
@@ -143,5 +142,14 @@ img{
   }
   #about h2{
     font-size: 2rem;
+  }
+}
+
+#document{
+  flex-grow: 2;
+  .react-pdf__Page__canvas {
+    margin: 0 0;
+    width: 80% !important;
+    height: auto !important;
   }
 }
