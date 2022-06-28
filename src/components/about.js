@@ -11,8 +11,8 @@ const About = (props) => {
         <p>
           My name is Elizabeth Frey. I was born in the Bay Area,
           but I grew up in Singapore and attended an international school. I
-          am currently a rising junior at Dartmouth College majoring in Computer Science
-          and Neuroscience.
+          am currently a rising junior at Dartmouth College majoring in Computer Science and
+          minoring in Neuroscience and Math.
           <br />
           <br />
           I&apos;m passionate about the intersection of technology and innovation, about mental health awareness,
