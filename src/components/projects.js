@@ -9,7 +9,7 @@ const Projects = (props) => {
   const projects = [
     {
       color: 'blue',
-      description: 'Worked as a React Native developer on chronic illness management app Flourish to mitigate significant vulnerabiliities affecting 80% of users and improved onboarding flow. (DALI)',
+      description: 'Worked as a React Native developer on chronic illness management app Flourish to mitigate significant vulnerabiliities affecting 80% of users and improved onboarding flow.',
       name: 'Flourish',
       image: flourish,
     },
@@ -37,8 +37,8 @@ const Projects = (props) => {
     },
     {
       color: 'red',
-      description: 'Incoming project...',
-      name: 'TBD',
+      description: 'React-Native, Node.js, MongoDB, Express.js, Expo community fitness application. I created the app architecture, wrote backend, and mentored two developers on the tech stack.',
+      name: 'FitWit',
     },
   ];
   return (
