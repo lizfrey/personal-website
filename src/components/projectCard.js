@@ -5,13 +5,13 @@ import { ReactSVG } from 'react-svg';
 const ProjectCard = (props) => {
   const [flipped, setFlipped] = useState(false);
   const {
-    image, name, color, description,
+    image, name, color, description, link,
   } = props;
 
   if (flipped) {
     return (
       <div role="listitem" className="project-card" style={{ backgroundColor: color }} onClick={() => { setFlipped(!flipped); }}>
-        <h4>{name}</h4>
+        {link ? <a href={link}><h4>{name}</h4></a> : <h4>{name}</h4>}
         <p>{description}</p>
       </div>
     );

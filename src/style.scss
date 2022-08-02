@@ -3,6 +3,7 @@ $brown: #B7ABA9;
 $green: #B1B3A3;
 $blue: #E8F2FE;
 $pink: #FBE8E6;
+$black: #1A1A1A;
 
 body, html {
   font-family: 'Karla', sans-serif;
@@ -10,6 +11,7 @@ body, html {
   font-size: 16px;
   margin-left: 3vw;
   margin-right: 3vw;
+  color: $black;
 }
 
 .main-body{
@@ -57,6 +59,10 @@ img{
 #projects{
   display: flex;
   flex-flow: row wrap;
+}
+
+a:link, a:visited{
+    color:$black;
 }
 
 .project-card, .project-card-flipped{
