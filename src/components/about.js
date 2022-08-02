@@ -15,7 +15,7 @@ const About = (props) => {
           minoring in Neuroscience and Math.
           <br />
           <br />
-          I&apos;m passionate about the intersection of technology and innovation, about mental health awareness,
+          I&apos;m passionate about the intersection of technology and innovation,mental health awareness,
           and empowering women in STEM.
           <br />
           <br />

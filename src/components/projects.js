@@ -16,7 +16,7 @@ const Projects = (props) => {
     {
       color: 'red',
       description: 'In this project, I created a reliable transport layer using UDP sockets and implemented threading, sockets, and select for simultaneous upload/download for P2P Dropbox project.',
-      name: 'Peer to peer Dropbox-like Project',
+      name: 'Peer-to-Peer Dropbox-like Project',
     },
     {
       color: 'red',
@@ -39,6 +39,16 @@ const Projects = (props) => {
       color: 'red',
       description: 'React-Native, Node.js, MongoDB, Express.js, Expo community fitness application. I created the app architecture, wrote backend, and mentored two developers on the tech stack.',
       name: 'FitWit',
+    },
+    {
+      color: 'blue',
+      description: 'An application that used OOP, Java, and data structures to classify the Brown corpus using Hidden Markov Models and the Dijkstra algorithm with 90% accuracy.',
+      name: 'Parts of Speech Tagger',
+    },
+    {
+      color: 'red',
+      description: 'A software design and implementation project written in C that lets users connect to a server and search a map. Made using the agile scrum process. Scrum master.',
+      name: 'Gold Mining Game',
     },
   ];
   return (
